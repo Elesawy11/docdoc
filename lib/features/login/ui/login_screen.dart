@@ -1,4 +1,6 @@
+import 'package:doctor_app/core/helpers/extension.dart';
 import 'package:doctor_app/core/helpers/spacing.dart';
+import 'package:doctor_app/core/routing/routes.dart';
 import 'package:doctor_app/core/theming/color.dart';
 import 'package:doctor_app/core/theming/styles.dart';
 import 'package:doctor_app/core/widgets/app_text_button.dart';
@@ -73,7 +75,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       verticalSpace(40),
-                      AppTextButton(buttonText: 'Login', onPressed: () {}),
+                      AppTextButton(buttonText: 'Login', onPressed: (){
+                       context.pushNamed(Routes.registerScreen);
+                      }),
                       verticalSpace(50),
                       const DividerAndText(),
                       verticalSpace(40),

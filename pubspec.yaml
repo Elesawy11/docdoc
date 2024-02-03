@@ -55,6 +55,8 @@ dependencies:
   retrofit_generator: ^8.0.6
   # For flutter splash screen
   flutter_native_splash: ^2.3.9
+  # A build system for Dart code generation and modular compilation
+  build_runner: ^2.4.8
   flutter:
     sdk: flutter
 
